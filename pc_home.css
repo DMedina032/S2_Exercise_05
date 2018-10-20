@@ -65,8 +65,8 @@ section#rightColumn img {
     width: 100%;
 }
 
-section#rightColumn>nav.horizontalNavigation {
-    widows: 25%;
+section#rightColumn>nav.horizontalNavigation li {
+    width: 25%;
 }
 
 
@@ -76,6 +76,12 @@ section#rightColumn>nav.horizontalNavigation {
 footer {
     background-color: rgb(71, 52, 29);
     clear: left;
+}
+
+footer::after {
+    clear: both;
+    content: "";
+    display: table;
 }
 
 footer>nav.verticalNavigation {
